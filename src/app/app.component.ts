@@ -15,7 +15,7 @@ export class AppComponent {
     },
     {
       'name': 'Profiles',
-      'url': '/profiles'
+      'url': '/profile'
     }
   ]
   

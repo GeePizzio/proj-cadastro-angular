@@ -21,8 +21,12 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    RouterModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([
+      { path: 'home', component: HomeComponent },
+      { path: 'profile', component: ProfileListComponent },
+      { path: 'profile/create', component: ProfileCreateUpdateComponent },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
