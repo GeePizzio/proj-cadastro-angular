@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'proj-cadastro-angular';
+  
+  minhaFuncao(){
+    alert('MINHA FUNÇÃO CHAMADA!');
+  }
 }
+
