@@ -7,7 +7,7 @@ import { MenuItem } from './interfaces/menu-item';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'proj-cadastro-angular';
+
   items: MenuItem[] = [
     {
       'name': 'Home',
@@ -18,9 +18,5 @@ export class AppComponent {
       'url': '/profile'
     }
   ]
-  
-  minhaFuncao(){
-    alert('MINHA FUNÇÃO CHAMADA!');
-  }
 }
 

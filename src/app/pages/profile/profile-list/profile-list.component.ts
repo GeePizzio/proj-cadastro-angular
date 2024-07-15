@@ -8,6 +8,7 @@ import { ProfileService } from 'src/app/services/profile.service';
 })
 export class ProfileListComponent {
 profiles: any;
+
   constructor(private profileService: ProfileService) {  }
   ngOnInit(){
     this.profileService.findAll().subscribe(result => {

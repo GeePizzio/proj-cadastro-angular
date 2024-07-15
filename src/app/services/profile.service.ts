@@ -13,4 +13,8 @@ export class ProfileService {
   findAll(){
     return this.http.get(this.api);
   }
+
+  save(profile: any){
+    return this.http.post<any>(this.api, profile);
+  }
 }
