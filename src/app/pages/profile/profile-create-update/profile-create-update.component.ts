@@ -23,8 +23,6 @@ export class ProfileCreateUpdateComponent {
 
   onSubmit(){
     const profile = this.profileForm.value;
-    this.profileService.save(profile).subscribe(result => { 
-      console.log(result);
-    })
+    console.log(profile);
   }
 }
