@@ -7,10 +7,13 @@ import { ProfileService } from 'src/app/services/profile.service';
   styleUrls: ['./profile-list.component.css']
 })
 export class ProfileListComponent {
+profiles: any;
   constructor(private profileService: ProfileService) {  }
   ngOnInit(){
     this.profileService.findAll().subscribe(result => {
-      console.log(result);
+      this.profiles = result;
+    }, error => {
+      console.log(error);
     });
   }
 }
