@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProfileListComponent } from './pages/profile/profile-list/profile-list.component';
 import { ProfileCreateUpdateComponent } from './pages/profile/profile-create-update/profile-create-update.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProfileService } from './services/profile.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
